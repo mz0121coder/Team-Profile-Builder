@@ -8,3 +8,12 @@ class Manager extends Employee {
         super (preferredName, idNumber, emailAddress);        
         this.officeNumber = officeNumber; 
     }
+
+        // occupation = "manager"
+        getOccupation() {
+            return "Manager";
+        }
+    }
+    
+    // export Manager.js
+    module.exports = Manager; 
