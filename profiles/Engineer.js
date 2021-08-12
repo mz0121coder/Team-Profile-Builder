@@ -8,3 +8,15 @@ class Engineer extends Employee {
         super (preferredName, idNumber, emailAddress);
         this.gitHubName = gitHubName; 
     }
+        // Get github name
+        getGitHubName() {
+            return this.gitHubName;
+        }
+    
+         // occupation = "Engineer"
+        getOccupation() {
+            return "Engineer";
+        }
+    }   
+    // Export Engineer.js
+    module.exports = Engineer; 
