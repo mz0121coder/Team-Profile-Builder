@@ -14,3 +14,10 @@ test('get github profile of engineer', () => {
 // expect getGithub() to return string containing engineer's github name
     expect(engineer.getGitHubName()).toEqual(expect.stringContaining(engineer.gitHubName.toString()));
 });
+
+// get current job of engineer
+test('get current occupation', () => {
+    const engineer = new Engineer('Mohammad', 2, 'mzcoder7@gmail.com');
+// expect job to equal "Engineer"
+    expect(engineer.getOccupation()).toEqual("Engineer");
+});
