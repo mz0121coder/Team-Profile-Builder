@@ -75,3 +75,4 @@ createHTML = (data) => {
 
             pageList.push(managerProfile);
         }
+        
