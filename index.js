@@ -83,3 +83,99 @@ const createEmployee = () => {
     console.log(`
     ADDING EMPLOYEES 
     `);
+    // start of employee questions
+    return inquirer.prompt ([
+        {
+            type: 'list',
+            name: 'occupation',
+            message: "Please choose occupation of the employee",
+            choices: ['Engineer', 'Intern']
+        },
+        {
+            type: 'input',
+            name: 'preferredName',
+            message: "What is the preferred name of the employee?", 
+            validate: nameValue => {
+                if (nameValue) {
+                    return true;
+                } else {
+                    console.log ("Please enter a valid name");
+                    return false; 
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'idNumber',
+            message: "What is the employee's ID number?",
+            validate: nameValue => {
+                if  (isNaN(nameValue)) {
+                    console.log ("Please enter a valid ID")
+                    return false; 
+                } else {
+                    return true;
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'emailAddress',
+            message: "What is the employee's email address?",
+            validate: emailAddress => {
+                valid = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(emailAddress)
+                if (valid) {
+                    return true;
+                } else {
+                    console.log ('Please enter a valid email address')
+                    return false; 
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'gitHubName',
+            message: "What is the employee's GitHub username?",
+            when: (input) => input.occupation === "Engineer",
+            validate: nameValue => {
+                if (nameValue) {
+                    return true;
+                } else {
+                    console.log ("Please enter a valid GitHub username")
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'schoolName',
+            message: "What is the employee's school name?",
+            when: (input) => input.occupation === "Intern",
+            validate: nameValue => {
+                if (nameValue) {
+                    return true;
+                } else {
+                    console.log ("Please enter a valid school name")
+                }
+            }
+        },
+        {
+            type: 'confirm',
+            name: 'confirmCreateEmployee',
+            message: 'Would you like to add more members to the team profile?',
+            default: false
+        }
+    ])
+    .then(employeeInfo => {
+        
+        let { preferredName, idNumber, emailAddress, occupation, gitHubName, schoolName, confirmCreateEmployee } = employeeInfo; 
+        let employee; 
+
+        if (occupation === "Engineer") {
+            employee = new Engineer (preferredName, idNumber, emailAddress, gitHubName);
+
+            console.log(employee);
+
+        } else if (occupation === "Intern") {
+            employee = new Intern (preferredName, idNumber, emailAddress, schoolName);
+
+            console.log(employee);
+        }
