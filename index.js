@@ -78,3 +78,8 @@ teamProfiles.push(manager);
 console.log(manager); 
 })
 };
+// create employee
+const createEmployee = () => {
+    console.log(`
+    ADDING EMPLOYEES 
+    `);
