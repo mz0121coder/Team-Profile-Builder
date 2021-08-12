@@ -193,3 +193,7 @@ const createEmployee = () => {
 // using file system to write html
 const writeFile = data => {
     fs.writeFile('./dist/index.html', data, err => {
+                // log error if present
+                if (err) {
+                    console.log(err);
+                    return;
