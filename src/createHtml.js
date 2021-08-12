@@ -87,4 +87,11 @@ createHTML = (data) => {
             pageList.push(internProfile);
         }       
     }
-    
+
+   // join created profiles (strings)
+   const employeeProfiles = pageList.join('')
+   // return created profiles
+   const createTeam = createTeamPage(employeeProfiles); 
+   return createTeam;
+}
+
