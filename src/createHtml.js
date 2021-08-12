@@ -5,7 +5,7 @@ const createManager = function(manager) {
         <div class="card h-100">
             <div class="info-header">
                 <h3>${manager.preferredName}</h3>
-                <h4>Manager</h4><i class="material-icons">content_paste</i>
+                <h4>Manager</h4><i class="material-icons">pending_actions</i>
             </div>
 
             <div class="info-card">
@@ -26,7 +26,7 @@ const createEngineer = function(engineer) {
         <div class="card h-100">
             <div class="info-header">
                 <h3>${engineer.preferredName}</h3>
-                <h4>Engineer</h4><i class="material-icons">laptop_mac</i>
+                <h4>Engineer</h4><i class="material-icons">engineering</i>
             </div>
 
             <div class="info">
@@ -47,7 +47,7 @@ const createIntern = function(intern) {
         <div class="card h-100">
             <div class="info-header">
                 <h3>${intern.preferredName}</h3>
-                <h4>Intern</h4><i class="material-icons">assignment_ind</i>
+                <h4>Intern</h4><i class="material-icons">person_add</i>
             </div>
 
             <div class="info-card">
