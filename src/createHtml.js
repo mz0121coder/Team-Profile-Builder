@@ -137,3 +137,6 @@ const createTeamPage = function(employeeProfiles) {
     </html>
   `;
   }
+
+// export createHTML
+module.exports = createHTML; 
