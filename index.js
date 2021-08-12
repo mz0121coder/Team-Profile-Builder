@@ -73,4 +73,8 @@ const createManager = () => {
     .then(managerInput => {
         const  { preferredName, idNumber, emailAddress, officeNumber } = managerInput; 
         const manager = new Manager (preferredName, idNumber, emailAddress, officeNumber);
-        
+// push inputs for manager profile
+teamProfiles.push(manager); 
+console.log(manager); 
+})
+};
