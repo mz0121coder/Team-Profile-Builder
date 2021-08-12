@@ -30,3 +30,10 @@ test('get email address of employee', () => {
 // expect email to equal a string
     expect(employee.getEmailAddress()).toEqual(expect.stringContaining(employee.emailAddress.toString()));
 });
+
+// employee job testing
+test('get current job of employee', () => {
+    const employee = new Employee('Mohammad', 2, 'mzcoder7@gmail.com');
+// expect job to equal "Employee"
+    expect(employee.getOccupation()).toEqual("Employee");
+}); 
