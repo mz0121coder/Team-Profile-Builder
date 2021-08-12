@@ -203,3 +203,16 @@ const writeFile = data => {
     }
 })
 }; 
+// create manager, employees + profile
+createManager()
+  .then(createEmployee)
+  // write profile to html 
+  .then(teamProfiles => {
+    return createHTML(teamProfiles);
+  })
+  .then(pageHTML => {
+    return writeFile(pageHTML);
+  })
+  .catch(err => {
+ console.log(err);
+  });
