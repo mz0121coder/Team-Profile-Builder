@@ -14,3 +14,10 @@ test('get name of school being attended by intern', () => {
 // expect test to return a string containing name of school attended
     expect(intern.getEducationInfo()).toEqual(expect.stringContaining(intern.schoolName.toString()));
 });
+
+// get current occupation
+test('get current occupation', () => {
+    const intern = new Intern('Mohammad', 2, 'mzcoder7@gmail.com', "2U");
+// expect to equal "Intern"
+    expect(intern.getOccupation()).toEqual("Intern");
+}); 
