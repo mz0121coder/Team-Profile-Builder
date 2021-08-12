@@ -197,3 +197,9 @@ const writeFile = data => {
                 if (err) {
                     console.log(err);
                     return;
+        // show message when profile is successful
+    } else {
+        console.log("Your team profile is successful, please view index.html to see the page.")
+    }
+})
+}; 
