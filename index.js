@@ -9,3 +9,6 @@ const Intern = require('./profiles/Intern');
 // Dependencies (fs, inquirer)
 const fs = require('fs'); 
 const inquirer = require('inquirer');
+
+// team profiles array
+const teamProfiles = []; 
