@@ -75,4 +75,10 @@ createHTML = (data) => {
 
             pageList.push(managerProfile);
         }
-        
+
+       // create engineer profile & push to page
+       if (role === 'Engineer') {
+        const engineerProfile = createEngineer(employee);
+
+        pageList.push(engineerProfile);
+    }
