@@ -68,3 +68,10 @@ createHTML = (data) => {
     for (let i = 0; i < data.length; i++) {
         const employee = data[i];
         const role = employee.getOccupation(); 
+
+        // create manager profile & push to page
+        if (role === 'Manager') {
+            const managerProfile = createManager(employee);
+
+            pageList.push(managerProfile);
+        }
