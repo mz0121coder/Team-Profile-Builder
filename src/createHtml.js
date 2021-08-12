@@ -59,3 +59,12 @@ const createIntern = function(intern) {
 </div>
     `
 };
+
+// push profiles to html page
+createHTML = (data) => {
+ 
+    pageList = []; 
+
+    for (let i = 0; i < data.length; i++) {
+        const employee = data[i];
+        const role = employee.getOccupation(); 
