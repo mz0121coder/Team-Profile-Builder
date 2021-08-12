@@ -22,3 +22,5 @@ getOccupation () {
     return 'Employee'; 
 }
 };
+// export Employee.js
+module.exports = Employee; 
