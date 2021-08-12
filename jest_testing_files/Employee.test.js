@@ -23,3 +23,10 @@ test('get ID number of employee', () => {
 // expect id to equal a number
     expect(employee.getIdNumber()).toEqual(expect.any(Number));
 });
+
+// employee email testing
+test('get email address of employee', () => {
+    const employee = new Employee('Mohammad', 2, 'mzcoder7@gmail.com');
+// expect email to equal a string
+    expect(employee.getEmailAddress()).toEqual(expect.stringContaining(employee.emailAddress.toString()));
+});
