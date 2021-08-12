@@ -5,3 +5,7 @@ const createHTML = require('./src/createHtml');
 const Manager = require('./profiles/Manager');
 const Engineer = require('./profiles/Engineer');
 const Intern = require('./profiles/Intern'); 
+
+// Dependencies (fs, inquirer)
+const fs = require('fs'); 
+const inquirer = require('inquirer');
