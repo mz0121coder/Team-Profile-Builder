@@ -8,3 +8,17 @@ class Intern extends Employee  {
         super (preferredName, idNumber, emailAddress); 
         this.schoolName = schoolName; 
     }
+    
+        // get school name
+        getEducationInfo() {
+            return this.schoolName;
+        }
+    
+        // occupation = "Intern"
+        getOccupation() {
+            return "Intern";
+        }
+    }
+    
+    // Export Intern.js
+    module.exports = Intern; 
