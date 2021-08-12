@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: darkblue;
+    --secondary: yellow;
+}
+
+body {
+    font-family: 'Vollkorn', serif;
+    background-color: firebrick;
+}
+
+#navbar {
+    background-color: darkblue;
+    color: yellow;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.navbar-text {
+    font-size: 55px;
+    background-color: darkblue;
+    color: yellow;
+    border: white;
+    border-radius: 10px;
+}
+
+
+.info-header {
+    background-color: darkblue;
+    color: yellow;
+    text-align: center;
+    border: white;
+    border-radius: 10px;
+}
+
+.info-card {
+    background-color: var(--secondary);
+    color: var(--primary);
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+    border: white;
+    border-radius: 10px;
+}
+
+.container {
+    margin: 105px auto;
+    justify-content: center;
+    display: flex;
+}
+
