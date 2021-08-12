@@ -39,3 +39,23 @@ const createEngineer = function(engineer) {
     </div>
     `
 }
+
+// create intern information
+const createIntern = function(intern) {
+    return `
+    <div class="col-4 mt-4">
+        <div class="card h-100">
+            <div class="info-header">
+                <h3>${intern.preferredName}</h3>
+                <h4>Intern</h4><i class="material-icons">assignment_ind</i>
+            </div>
+
+            <div class="info-card">
+                <p class="idnumber">ID: ${intern.idNumber}</p>
+                <p class="emailaddress">Email:<a href="mailto:${intern.emailAddress}">${intern.emailAddress}</a></p>
+                <p class="schoolname">School: ${intern.schoolName}</p>
+            </div>
+    </div>
+</div>
+    `
+};
