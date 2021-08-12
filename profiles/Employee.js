@@ -5,3 +5,7 @@ class Employee {
         this.idNumber = idNumber;
         this.emailAddress = emailAddress;
     }
+// get Preferred Name
+getPreferredName() {
+    return this.preferredName;
+}
