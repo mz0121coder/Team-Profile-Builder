@@ -179,3 +179,13 @@ const createEmployee = () => {
 
             console.log(employee);
         }
+        // push employee profile if created
+        teamProfiles.push(employee); 
+
+        if (confirmCreateEmployee) {
+            return createEmployee(teamProfiles); 
+        } else {
+            return teamProfiles;
+        }
+    })
+};
