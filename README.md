@@ -42,10 +42,18 @@ In terminal or gitbash, run the `npm test` command - use this for testing the co
 If you have additional questions, please contact me at mzcoder7@gmail.com.  
 GitHub: https://github.com/mz0121coder
 
-## Walkthrough Video
-[Creating a profile with VS code integrated terminal](./assets/Team-Profile-Builder-demo.mp4)    
+## Walkthrough Videos
+[Creating a profile with VS code integrated terminal](https://youtu.be/lAeN5h_4dmc) - This video also shows the page in browser
+
+[Running tests](https://youtu.be/KX2ra0XimeE) - This video shows tests being run in terminal
+
+## Development
+Currently the application generates profiles correctly and 10/13 tests are passed. To achieve a perfect score, I can debug the 'Engineer' and 'Manager' profile code. 
 
 ## Sample profile 
 ![Team-Profile-Builder-screenshot](./assets/Team-Profile-Builder-screenshot.png)
+
+
+
 
 
